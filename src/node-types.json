@@ -2437,6 +2437,10 @@
     "named": false
   },
   {
+    "type": "DATA",
+    "named": false
+  },
+  {
     "type": "DATATYPE",
     "named": false
   },
@@ -2450,14 +2454,6 @@
   },
   {
     "type": "DELETE",
-    "named": false
-  },
-  {
-    "type": "DELETE DATA",
-    "named": false
-  },
-  {
-    "type": "DELETE WHERE",
     "named": false
   },
   {
@@ -2526,10 +2522,6 @@
   },
   {
     "type": "INSERT",
-    "named": false
-  },
-  {
-    "type": "INSERT DATA",
     "named": false
   },
   {

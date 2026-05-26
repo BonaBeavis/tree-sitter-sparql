@@ -10,8 +10,32 @@ INSERT DATA {
 
 ---
 
-(unit 
-  (insert_data 
+(unit
+  (insert_data
+    (quads
+      (quads_not_triples
+        (iri_reference)
+        (triples_template
+          (triples_same_subject
+            (var)
+            (property_list (property
+              (var)
+              (object_list (var))))))))))
+
+==================================
+Insert with multiple white spaces
+==================================
+
+INSERT     DATA {
+  GRAPH <www.example.net> {
+    ?s ?p ?o .
+  }
+}
+
+---
+
+(unit
+  (insert_data
     (quads
       (quads_not_triples
         (iri_reference)
