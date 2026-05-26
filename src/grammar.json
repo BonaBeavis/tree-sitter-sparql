@@ -1607,8 +1607,28 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "INSERT DATA"
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PATTERN",
+              "value": "[Ii][Nn][Ss][Ee][Rr][Tt]"
+            }
+          },
+          "named": false,
+          "value": "INSERT"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PATTERN",
+              "value": "[Dd][Aa][Tt][Aa]"
+            }
+          },
+          "named": false,
+          "value": "DATA"
         },
         {
           "type": "SYMBOL",
@@ -1620,8 +1640,28 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "DELETE DATA"
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PATTERN",
+              "value": "[Dd][Ee][Ll][Ee][Tt][Ee]"
+            }
+          },
+          "named": false,
+          "value": "DELETE"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PATTERN",
+              "value": "[Dd][Aa][Tt][Aa]"
+            }
+          },
+          "named": false,
+          "value": "DATA"
         },
         {
           "type": "SYMBOL",
@@ -1633,8 +1673,28 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "DELETE WHERE"
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PATTERN",
+              "value": "[Dd][Ee][Ll][Ee][Tt][Ee]"
+            }
+          },
+          "named": false,
+          "value": "DELETE"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PATTERN",
+              "value": "[Ww][Hh][Ee][Rr][Ee]"
+            }
+          },
+          "named": false,
+          "value": "WHERE"
         },
         {
           "type": "SYMBOL",
