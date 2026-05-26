@@ -431,13 +431,25 @@ module.exports = grammar({
     ),
 
     // [38]
-    insert_data: $ => seq('INSERT DATA', $.quads),
+    insert_data: $ => seq(
+      'INSERT'.toCaseInsensitiv(),
+      'DATA'.toCaseInsensitiv(),
+      $.quads
+    ),
 
     // [39]
-    delete_data: $ => seq('DELETE DATA', $.quads),
+    delete_data: $ => seq(
+      'DELETE'.toCaseInsensitiv(),
+      'DATA'.toCaseInsensitiv(),
+      $.quads
+    ),
 
     // [40]
-    delete_where: $ => seq('DELETE WHERE', $.quads),
+    delete_where: $ => seq(
+      'DELETE'.toCaseInsensitiv(),
+      'WHERE'.toCaseInsensitiv(),
+      $.quads
+    ),
 
     // [41]
     modify: $ => seq(
